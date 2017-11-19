@@ -27,7 +27,8 @@ h3 {
   margin-top: 2rem; }
 
 input[type="submit"] {
-  color: #1438ff; }
+  color: #1438ff;
+  -webkit-appearance: none; }
 
 .wayv-button {
   background: none;

@@ -32,6 +32,7 @@ h3 {
 }
 input[type = "submit"] {
 	color: hsla(231, 100%, 54%, 1);
+	-webkit-appearance: none;
 }
 .wayv-button {
 	background: none;
