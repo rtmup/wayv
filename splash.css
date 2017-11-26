@@ -4,7 +4,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   counter-reset: item;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 h1 {
   font-family: 'Prompt', sans-serif;
@@ -16,8 +17,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 100;
-  margin: 0 0 1rem 0;
-  text-align: center; }
+  margin: 0 0 1rem 0; }
 
 h3 {
   font-size: 1.375rem;
@@ -40,7 +40,6 @@ input[type="submit"] {
   font-weight: 400;
   margin: 0 auto 1rem auto;
   padding: .875rem 1rem;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   white-space: normal;
@@ -72,7 +71,6 @@ input[type="submit"] {
   display: none; }
 
 .overlayed-content {
-  text-align: center;
   padding: 2rem;
   position: relative;
   z-index: 1; }
@@ -92,45 +90,45 @@ input[type="submit"] {
   color: #fff;
   margin: 0 auto 1.5rem auto; }
 
-.about-section {
+.problems-section {
   margin: 0 auto;
   padding: 2rem; }
-.about-section p {
+.problems-section p {
   color: #666;
-  font-size: 1rem;
-  text-align: center; }
+  font-size: 1rem; }
 
-.features-section {
-  background: #eff6ff;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center; }
-.features-section ol {
+ol, ul {
   list-style: none;
   margin: 2rem 0;
   padding: 0; }
-.features-section ol li {
-  counter-increment: item;
+
+.problems-section li, .features-section li {
   margin-bottom: 2rem; }
-.features-section ol li::before {
-  content: counter(item);
+.problems-section li::before, .features-section li::before {
   border: solid 1px #1438ff;
   border-radius: 100%;
   width: 1.2em;
   font-size: 3rem;
-  text-align: center;
   display: inline-block;
   color: #1438ff; }
-.features-section ol li p {
+.problems-section li p, .features-section li p {
   color: #666;
   font-size: 1rem;
   margin: 0; }
 
+.features-section {
+  background: #eff6ff;
+  margin: 0 auto;
+  padding: 2rem; }
+.features-section li {
+  counter-increment: item; }
+.features-section li::before {
+  content: counter(item); }
+
 .content {
   background: rgba(20, 56, 255, 0.8);
   color: #fff;
-  padding: 2rem;
-  text-align: center; }
+  padding: 2rem; }
 
 .button {
   font-size: .675rem;
@@ -164,7 +162,6 @@ input[type="submit"] {
 
   .overlayed-content {
     color: white;
-    text-align: center;
     background: rgba(20, 55, 255, 0.8);
     padding: 4rem 2rem; }
 
@@ -179,22 +176,23 @@ input[type="submit"] {
     transform: translate(-50%, -50%);
     width: auto; }
 
-  .about-section {
+  .problems-section {
     max-width: 40%;
     padding: 4rem 2rem; }
-  .about-section p {
-    font-size: 1.25rem; }
+  .problems-section p {
+    font-size: 1.25rem;
+    line-height: 1.4; }
 
-  .features-section {
+  .features-section, .problems-section {
     padding: 4rem 2rem; }
-  .features-section ol {
+  .features-section ol, .problems-section ol {
     margin: 3rem auto 0px;
     max-width: 40%; }
-  .features-section ol li {
+  .features-section li, .problems-section li {
     margin-bottom: 3rem; }
-  .features-section ol li p {
+  .features-section li p, .problems-section li p {
     font-size: 1.25rem; }
-  .features-section ol li:before {
+  .features-section li:before, .problems-section li:before {
     font-size: 4rem; }
 
   .wayv-button {

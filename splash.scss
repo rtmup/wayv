@@ -5,6 +5,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	counter-reset: item;
 	margin: 0;
+	text-align: center;
 }
 
 // universal
@@ -19,7 +20,6 @@ h2 {
 	font-size: 2rem;
 	font-weight: 100;
 	margin: 0 0 1rem 0;
-	text-align: center;
 }
 h3 {
 	font-size: 1.375rem;
@@ -44,7 +44,6 @@ input[type = "submit"] {
 	font-weight: 400;
 	margin: 0 auto 1rem auto;
 	padding: .875rem 1rem;
-	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: normal;
@@ -85,7 +84,6 @@ input[type = "submit"] {
 	display: none;
 }
 .overlayed-content {
-	text-align: center;
 	padding: 2rem;
     position: relative;
     z-index: 1;
@@ -112,45 +110,52 @@ input[type = "submit"] {
 	}
 }
 
-// about-section
-.about-section {
+// problems-section
+.problems-section {
 	margin: 0 auto;
 	padding: 2rem;
 	p {
 		color: #666;
 		font-size: 1rem;
-		text-align: center;
 	}
 }
+
+ol, ul {
+	list-style: none;
+	margin: 2rem 0;
+	padding: 0;
+
+}
+
+.problems-section, .features-section {
+	li {
+		margin-bottom: 2rem;
+		&::before {
+			border: solid 1px hsla(231, 100%, 54%, 1);
+			border-radius: 100%;
+			width: 1.2em;
+			font-size: 3rem;
+			display: inline-block;
+			color: hsla(231, 100%, 54%, 1);
+		}
+		p {
+			color: #666;
+			font-size: 1rem;
+			margin: 0;
+		}
+	}		
+}
+
 
 // features section
 .features-section {
 	background: #eff6ff;
 	margin: 0 auto;
 	padding: 2rem;
-	text-align: center;
-	ol {
-		list-style: none;
-		margin: 2rem 0;
-		padding: 0;
-		li {
-			counter-increment: item;
-			margin-bottom: 2rem;
-			&::before {
-				content: counter(item);
-				border: solid 1px hsla(231, 100%, 54%, 1);
-				border-radius: 100%;
-				width: 1.2em;
-				font-size: 3rem;
-				text-align: center;
-				display: inline-block;
-				color: hsla(231, 100%, 54%, 1);
-			}
-			p {
-				color: #666;
-				font-size: 1rem;
-				margin: 0;
-			}
+	li {
+		counter-increment: item;
+		&::before {
+			content: counter(item);
 		}
 	}
 }
@@ -160,7 +165,6 @@ input[type = "submit"] {
 	background: hsla(231, 100%, 54%, .8);
 	color: #fff;
 	padding: 2rem;
-	text-align: center;
 }
 .button {
 	font-size: .675rem;
@@ -200,7 +204,6 @@ input[type = "submit"] {
 	}
 	.overlayed-content {
 		color: rgb(255, 255, 255);
-	    text-align: center;
 	    background: rgba(20, 55, 255, 0.8);
 	    padding: 4rem 2rem;
 	}
@@ -215,26 +218,27 @@ input[type = "submit"] {
 	    transform: translate(-50%, -50%);
 	    width: auto;
 	}
-	.about-section {
+	.problems-section {
 		max-width: 40%;
 		padding: 4rem 2rem;
 		p {
 			font-size: 1.25rem;
+			line-height: 1.4;
 		}
 	}
-	.features-section {
+	.features-section, .problems-section {
 		padding: 4rem 2rem;
 		ol {
 			margin: 3rem auto 0px;
 		    max-width: 40%;
-			li {
-				margin-bottom: 3rem;
-				p {
-					font-size: 1.25rem;
-				}
-				&:before {
-					font-size: 4rem;
-				}
+		}
+		li {
+			margin-bottom: 3rem;
+			p {
+				font-size: 1.25rem;
+			}
+			&:before {
+				font-size: 4rem;
 			}
 		}
 	}
