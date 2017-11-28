@@ -105,19 +105,23 @@ ol, ul {
 .problems-section li, .features-section li {
   margin-bottom: 2rem; }
 .problems-section li::before, .features-section li::before {
-  border: solid 1px #1438ff;
+  border: solid 1px #fff;
   border-radius: 100%;
   width: 1.2em;
   font-size: 3rem;
   display: inline-block;
-  color: #1438ff; }
+  color: #fff; }
+.problems-section li h3, .features-section li h3 {
+  color: #fff; }
 .problems-section li p, .features-section li p {
-  color: #666;
+  color: #fff;
   font-size: 1rem;
   margin: 0; }
 
 .features-section {
-  background: #eff6ff;
+  background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+  background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+  background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
   margin: 0 auto;
   padding: 2rem; }
 .features-section li {
@@ -162,7 +166,10 @@ ol, ul {
 
   .overlayed-content {
     color: white;
-    background: rgba(20, 55, 255, 0.8);
+    background-color: #1a78a5;
+    background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+    background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
     padding: 4rem 2rem; }
 
   .video {

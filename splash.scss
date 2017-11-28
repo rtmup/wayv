@@ -131,15 +131,18 @@ ol, ul {
 	li {
 		margin-bottom: 2rem;
 		&::before {
-			border: solid 1px hsla(231, 100%, 54%, 1);
+			border: solid 1px #fff;
 			border-radius: 100%;
 			width: 1.2em;
 			font-size: 3rem;
 			display: inline-block;
-			color: hsla(231, 100%, 54%, 1);
+			color: #fff;
+		}
+		h3 {
+			color: #fff;
 		}
 		p {
-			color: #666;
+			color: #fff;
 			font-size: 1rem;
 			margin: 0;
 		}
@@ -149,7 +152,9 @@ ol, ul {
 
 // features section
 .features-section {
-	background: #eff6ff;
+	background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+    background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
 	margin: 0 auto;
 	padding: 2rem;
 	li {
@@ -204,7 +209,10 @@ ol, ul {
 	}
 	.overlayed-content {
 		color: rgb(255, 255, 255);
-	    background: rgba(20, 55, 255, 0.8);
+	    background-color: #1a78a5;
+	    background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+	    background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+	    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
 	    padding: 4rem 2rem;
 	}
 	.video {
