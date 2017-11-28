@@ -27,14 +27,13 @@ h3 {
   margin-top: 2rem; }
 
 input[type="submit"] {
-  color: #1438ff;
+  color: #1a78a5;
   -webkit-appearance: none; }
 
 .wayv-button {
   background: none;
   border: none;
   border-radius: 6px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   display: inline-block;
   font-size: .875rem;
   font-weight: 400;
@@ -46,19 +45,22 @@ input[type="submit"] {
   -webkit-transition: box-shadow 0.3s cubic-bezier(0.2, 0.6, 0.2, 1), background-color 0.25s ease-out, color 0.25s ease-out; }
 .wayv-button.white {
   background: #fff;
-  color: #1438ff; }
+  color: #1a78a5; }
 .wayv-button.white:hover {
-  background: #eff6ff;
-  cursor: pointer; }
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 7px 0 rgba(0, 0, 0, 0.13), 0 3px 1px -1px rgba(0, 0, 0, 0.23); }
 .wayv-button.blue {
-  background: #1438ff;
+  background: #1a78a5;
   color: #fff; }
 .wayv-button.blue:hover {
   background: rgba(20, 56, 255, 0.8);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 7px 0 rgba(0, 0, 0, 0.13), 0 3px 1px -1px rgba(0, 0, 0, 0.23); }
 
 .hero-section {
-  background: #1438ff;
+  background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+  background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+  background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
   color: #fff;
   overflow: hidden;
   position: relative; }
@@ -124,6 +126,8 @@ ol, ul {
   background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
   margin: 0 auto;
   padding: 2rem; }
+.features-section h2 {
+  color: #fff; }
 .features-section li {
   counter-increment: item; }
 .features-section li::before {

@@ -31,14 +31,13 @@ h3 {
 	margin-top: 2rem;
 }
 input[type = "submit"] {
-	color: hsla(231, 100%, 54%, 1);
+	color: #1a78a5;
 	-webkit-appearance: none;
 }
 .wayv-button {
 	background: none;
 	border: none;
 	border-radius: 6px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15), 0 1px 5px 0 rgba(0,0,0,0.1), 0 3px 1px -2px rgba(0,0,0,0.2);
 	display: inline-block;
 	font-size: .875rem;
 	font-weight: 400;
@@ -50,14 +49,15 @@ input[type = "submit"] {
 	-webkit-transition: box-shadow 0.3s cubic-bezier(0.2,0.6,0.2,1),background-color 0.25s ease-out,color 0.25s ease-out;
 	&.white {
 		background: #fff;
-		color: hsla(231, 100%, 54%, 1);
+		color: #1a78a5;
 		&:hover {
-			background: #eff6ff;
+			background: #fff;
 			cursor: pointer;
+			box-shadow: 0 3px 3px 0 rgba(0,0,0,0.18), 0 1px 7px 0 rgba(0,0,0,0.13), 0 3px 1px -1px rgba(0,0,0,0.23);
 		}
 	}
 	&.blue {
-		background: hsla(231, 100%, 54%, 1);
+		background: #1a78a5;
 		color: #fff;
 		&:hover {
 			background: hsla(231, 100%, 54%, .8);
@@ -68,7 +68,9 @@ input[type = "submit"] {
 
 // hero-section
 .hero-section {
-	background: hsla(231, 100%, 54%, 1);
+	background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+    background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
 	color: #fff;
 	overflow: hidden;
     position: relative;
@@ -157,6 +159,9 @@ ol, ul {
     background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
 	margin: 0 auto;
 	padding: 2rem;
+	h2 {
+		color: #fff;
+	}
 	li {
 		counter-increment: item;
 		&::before {
