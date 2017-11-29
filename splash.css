@@ -58,8 +58,8 @@ input[type="submit"] {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 7px 0 rgba(0, 0, 0, 0.13), 0 3px 1px -1px rgba(0, 0, 0, 0.23); }
 
 .hero-section {
-  background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
-  background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
+  background: -webkit-radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
+  background: -moz-radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
   background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
   color: #fff;
   overflow: hidden;
@@ -95,27 +95,44 @@ input[type="submit"] {
 .problems-section {
   margin: 0 auto;
   padding: 2rem; }
+.problems-section p, .problems-section li {
+  font-size: 1rem;
+  text-align: left; }
 .problems-section p {
-  color: #666;
-  font-size: 1rem; }
+  font-weight: 100; }
+.problems-section li {
+  font-weight: 100; }
+.problems-section img {
+  max-width: 100%; }
+.problems-section h2 {
+  text-align: left;
+  margin-top: 1.5rem; }
+.problems-section li {
+  text-align: left;
+  margin-bottom: .25rem; }
+.problems-section li::before {
+  content: url(check-icon.png);
+  font-size: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle; }
 
 ol, ul {
   list-style: none;
   margin: 2rem 0;
   padding: 0; }
 
-.problems-section li, .features-section li {
+.features-section li {
   margin-bottom: 2rem; }
-.problems-section li::before, .features-section li::before {
+.features-section li::before {
   border: solid 1px #fff;
   border-radius: 100%;
   width: 1.2em;
   font-size: 3rem;
   display: inline-block;
   color: #fff; }
-.problems-section li h3, .features-section li h3 {
+.features-section li h3 {
   color: #fff; }
-.problems-section li p, .features-section li p {
+.features-section li p {
   color: #fff;
   font-size: 1rem;
   margin: 0; }
@@ -171,9 +188,9 @@ ol, ul {
   .overlayed-content {
     color: white;
     background-color: #1a78a5;
-    background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
-    background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
-    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
+    background: -webkit-radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, rgba(29, 119, 162, 0.8) 60%) !important;
+    background: -moz-radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, rgba(29, 119, 162, 0.8) 60%) !important;
+    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, rgba(29, 119, 162, 0.8) 60%) !important;
     padding: 4rem 2rem; }
 
   .video {
@@ -188,22 +205,28 @@ ol, ul {
     width: auto; }
 
   .problems-section {
-    max-width: 40%;
-    padding: 4rem 2rem; }
-  .problems-section p {
+    padding: 10rem; }
+  .problems-section p, .problems-section li {
     font-size: 1.25rem;
     line-height: 1.4; }
+  .problems-section img {
+    max-width: 40%;
+    float: left;
+    margin: 0 3rem 12rem 0; }
+  .problems-section h2 {
+    margin-top: 0; }
 
-  .features-section, .problems-section {
+  .features-section {
     padding: 4rem 2rem; }
-  .features-section ol, .problems-section ol {
+
+  .features-section ol {
     margin: 3rem auto 0px;
     max-width: 40%; }
-  .features-section li, .problems-section li {
+  .features-section li {
     margin-bottom: 3rem; }
-  .features-section li p, .problems-section li p {
+  .features-section li p {
     font-size: 1.25rem; }
-  .features-section li:before, .problems-section li:before {
+  .features-section li:before {
     font-size: 4rem; }
 
   .wayv-button {

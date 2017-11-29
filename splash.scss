@@ -68,9 +68,9 @@ input[type = "submit"] {
 
 // hero-section
 .hero-section {
-	background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
-    background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
-    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
+	background: -webkit-radial-gradient(farthest-corner at 48% -60%, rgba(47, 189, 202, 1) 0%, rgba(29, 119, 162, 1) 60%) !important;
+    background: -moz-radial-gradient(farthest-corner at 48% -60%, rgba(47, 189, 202, 1) 0%, rgba(29, 119, 162, 1) 60%) !important;
+    background: radial-gradient(farthest-corner at 48% -60%, rgba(47, 189, 202, 1) 0%, rgba(29, 119, 162, 1) 60%) !important;
 	color: #fff;
 	overflow: hidden;
     position: relative;
@@ -116,9 +116,32 @@ input[type = "submit"] {
 .problems-section {
 	margin: 0 auto;
 	padding: 2rem;
-	p {
-		color: #666;
+	p, li {
 		font-size: 1rem;
+		text-align: left;
+	}
+	p {
+		font-weight: 100;
+	}
+	li {
+		font-weight: 100;
+	}
+	img {
+		max-width: 100%;
+	}
+	h2 {
+		text-align: left;
+		margin-top: 1.5rem;
+	}
+	li {
+		text-align: left;
+		margin-bottom: .25rem;
+	}
+	li::before {
+		content: url(check-icon.png);
+		font-size: 2rem;
+		margin-right: 1rem;
+		vertical-align: middle;
 	}
 }
 
@@ -129,7 +152,7 @@ ol, ul {
 
 }
 
-.problems-section, .features-section {
+.features-section {
 	li {
 		margin-bottom: 2rem;
 		&::before {
@@ -215,9 +238,9 @@ ol, ul {
 	.overlayed-content {
 		color: rgb(255, 255, 255);
 	    background-color: #1a78a5;
-	    background: -webkit-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
-	    background: -moz-radial-gradient(farthest-corner at 48% -60%, #8ce071 0%, #00a699 60%) !important;
-	    background: radial-gradient(farthest-corner at 48% -60%, #2fbdca 0%, #1d77a2 60%) !important;
+	    background: -webkit-radial-gradient(farthest-corner at 48% -60%, rgba(47, 189, 202, 1) 0%, rgba(29, 119, 162, .8) 60%) !important;
+	    background: -moz-radial-gradient(farthest-corner at 48% -60%, rgba(47, 189, 202, 1) 0%, rgba(29, 119, 162, .8) 60%) !important;
+	    background: radial-gradient(farthest-corner at 48% -60%, rgba(47, 189, 202, 1) 0%, rgba(29, 119, 162, .8) 60%) !important;
 	    padding: 4rem 2rem;
 	}
 	.video {
@@ -232,15 +255,24 @@ ol, ul {
 	    width: auto;
 	}
 	.problems-section {
-		max-width: 40%;
-		padding: 4rem 2rem;
-		p {
+		padding: 10rem;
+		p, li {
 			font-size: 1.25rem;
 			line-height: 1.4;
 		}
+		img {
+			max-width: 40%;
+			float:left;
+			margin: 0 3rem 12rem 0;
+		}
+		h2 {
+			margin-top: 0;
+		}
 	}
-	.features-section, .problems-section {
+	.features-section {
 		padding: 4rem 2rem;
+	}
+	.features-section {
 		ol {
 			margin: 3rem auto 0px;
 		    max-width: 40%;
